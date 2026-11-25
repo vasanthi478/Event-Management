@@ -1,0 +1,678 @@
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f5f7fb;
+    line-height: 1.6;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ================= LOGIN / SIGNUP ================= */
+
+.auth-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+}
+
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    width: 400px;
+    max-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.auth-box h1 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.auth-box h2 {
+    margin-bottom: 8px;
+}
+
+.auth-box > p {
+    color: #666;
+}
+
+.auth-box form {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.auth-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.auth-box input:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25,118,210,0.12);
+}
+
+.auth-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #0d47a1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.auth-btn:hover {
+    background: #1976d2;
+}
+
+.auth-link {
+    margin-top: 25px;
+}
+
+.auth-link a {
+    color: #0d47a1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+    background: #0d47a1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #bbdefb;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.logout-btn {
+    background: #ef5350;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background: #c62828;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(13,71,161,0.85),
+        rgba(25,118,210,0.85)
+    );
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #0d47a1;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.main-btn:hover {
+    background: #e3f2fd;
+    transform: translateY(-2px);
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+    padding: 70px 20px;
+    text-align: center;
+    background: white;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 30px 20px;
+    border-radius: 12px;
+    background: #f5f7fb;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.13);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: #0d47a1;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ================= EVENTS ================= */
+
+.events-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 32px;
+}
+
+.section-description {
+    margin-top: 10px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.event-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-image {
+    height: 160px;
+    background: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.event-content {
+    padding: 25px;
+}
+
+.event-content h3 {
+    color: #0d47a1;
+    margin-bottom: 12px;
+}
+
+.event-content p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.event-content h4 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.event-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #0d47a1;
+    color: white;
+    font-weight: bold;
+}
+
+.event-btn:hover {
+    background: #1976d2;
+}
+
+/* ================= REGISTRATION ================= */
+
+.registration-section {
+    padding: 70px 20px;
+    background: #e3f2fd;
+    display: flex;
+    justify-content: center;
+}
+
+.registration-box {
+    width: 600px;
+    max-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.registration-box h2 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.registration-box > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.registration-box label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.registration-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.registration-box input:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+.registration-box input[readonly] {
+    background: #f1f1f1;
+}
+
+.total-box {
+    margin-top: 25px;
+    padding: 18px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+.register-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #0d47a1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.register-btn:hover {
+    background: #1976d2;
+}
+
+/* ================= CONFIRMATION ================= */
+
+.confirmation-section {
+    display: none;
+    padding: 70px 20px;
+    background: #e8f5e9;
+    justify-content: center;
+}
+
+.confirmation-box {
+    width: 650px;
+    max-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4caf50;
+    color: white;
+    font-size: 40px;
+}
+
+.confirmation-box h2 {
+    color: #2e7d32;
+    margin: 20px 0 10px;
+}
+
+.confirmation-details {
+    margin-top: 25px;
+    text-align: left;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.confirmation-details p {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.confirmation-details span {
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.paid {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.print-btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #0d47a1;
+    color: white;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section {
+    padding: 70px 20px;
+    text-align: center;
+    background: white;
+}
+
+.about-section h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.contact-section textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-section button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 7px;
+    background: #0d47a1;
+    color: white;
+}
+
+.contact-section button:hover,
+.print-btn:hover {
+    background: #1976d2;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ================= PRINT ================= */
+
+@media print {
+    header,
+    .hero,
+    .features,
+    .events-section,
+    .registration-section,
+    .about-section,
+    .contact-section,
+    footer,
+    .print-btn {
+        display: none !important;
+    }
+
+    .confirmation-section {
+        display: flex !important;
+        background: white;
+        padding: 0;
+    }
+
+    .confirmation-box {
+        box-shadow: none;
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .feature-container,
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-box {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .registration-box,
+    .confirmation-box {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .confirmation-details p {
+        flex-wrap: wrap;
+    }
+}

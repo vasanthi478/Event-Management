@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub - Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+    <div class="auth-container">
+        <div class="auth-box">
+
+            <h1>EventHub</h1>
+            <h2>Event Management Registration</h2>
+            <p>Complete your registration details</p>
+
+            <form onsubmit="paymentUser(event)">
+
+                <label for="consumerId">Consumer Number</label>
+                <input
+                    type="text"
+                    id="consumerId"
+                    name="consumernumber"
+                    placeholder="Enter consumer number"
+                    required
+                >
+
+                <label for="customerName">Customer Name</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    name="customerName"
+                    placeholder="Enter customer name"
+                    required
+                >
+
+                <label for="amount">Amount (₹)</label>
+                <input
+                    type="number"
+                    id="amount"
+                    name="amount"
+                    min="1"
+                    placeholder="Enter amount"
+                    required
+                >
+
+                <button type="submit" class="auth-btn">
+                    Pay Now
+                </button>
+
+                <button
+                    type="button"
+                    class="auth-btn"
+                    onclick="history.back()"
+                >
+                    Back
+                </button>
+
+            </form>
+
+            <p class="auth-link">
+                <a href="project.html">Back to EventHub</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
